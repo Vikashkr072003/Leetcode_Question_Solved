@@ -2,9 +2,10 @@
 # move_Zero :- Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements
 
 
-
 # Solved :-------
 nums = [0, 1, 0, 3, 12]
+
+
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
@@ -18,7 +19,6 @@ class Solution:
             if num != 0:
                 result[insert_pos] = num
                 insert_pos += 1
-        
+
         for i in range(n):
             nums[i] = result[i]
-            
